@@ -164,7 +164,7 @@ We welcome contributions from the community. To contribute, please follow these 
 
 ## Meet the Developers
 
-### 0xV6
+### Raman Mann
 
 - [GitHub](https://github.com/0xV6)
 - [X.com](https://x.com/raman_205)
