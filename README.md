@@ -1,9 +1,9 @@
 # RESURRECTION - A BLOOD DONATION PLATFORM
 
-[![GitHub issues](https://img.shields.io/github/issues/zeroxv6/RESURRECTION)](https://github.com/zeroxv6/RESURRECTION/issues)
-[![GitHub forks](https://img.shields.io/github/forks/zeroxv6/RESURRECTION)](https://github.com/zeroxv6/RESURRECTION/network)
-[![GitHub stars](https://img.shields.io/github/stars/zeroxv6/RESURRECTION)](https://github.com/zeroxv6/RESURRECTION/stargazers)
-[![GitHub license](https://img.shields.io/github/license/zeroxv6/RESURRECTION?style=for-the-badge&label=License&color=blue)](https://opensource.org/licenses/GPL-3.0)
+[![GitHub issues](https://img.shields.io/github/issues/DeepanshuSharma05/RESURRECTION)](https://github.com/DeepanshuSharma05/RESURRECTION/issues)
+[![GitHub forks](https://img.shields.io/github/forks/DeepanshuSharma05/RESURRECTION)](https://github.com/DeepanshuSharma05/RESURRECTION/network)
+[![GitHub stars](https://img.shields.io/github/stars/DeepanshuSharma05/RESURRECTION)](https://github.com/DeepanshuSharma05/RESURRECTION/stargazers)
+[![GitHub license](https://img.shields.io/github/license/DeepanshuSharma05/RESURRECTION?style=for-the-badge&label=License&color=blue)](https://opensource.org/licenses/GPL-3.0)
 
 
 
@@ -40,7 +40,7 @@ To get started with RESURRECTION, follow these steps:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/zeroxv6/RESURRECTION.git
+    git clone https://github.com/DeepanshuSharma05/RESURRECTION.git
     ```
 2. Navigate to the project directory:
     ```sh
