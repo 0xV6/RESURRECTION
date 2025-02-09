@@ -1,0 +1,275 @@
+
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Create Post - Resurrection</title>-->
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">-->
+<!--</head>-->
+<!--<body class="bg-gray-900 text-white font-semibold">-->
+<!--<nav class="bg-gray-800 shadow-lg mb-8">-->
+<!--    <div class="container mx-auto px-6">-->
+<!--        <div class="flex justify-between items-center py-6">-->
+<!--            <a href="/" class="text-white text-2xl font-bold">Resurrection</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</nav>-->
+
+<!--<div class="container mx-auto px-4 py-8">-->
+<!--    <form id="postForm" class="max-w-lg mx-auto bg-gray-800 rounded-lg shadow-md p-6">-->
+<!--        <h2 class="text-2xl font-bold mb-6 text-white text-center">Create New Post</h2>-->
+
+<!--        <div class="mb-4">-->
+<!--            <label for="name" class="block text-white font-bold mb-2">Name</label>-->
+<!--            <input type="text" id="name" name="name" required-->
+<!--                   class="w-full px-3 py-2 rounded-lg focus:outline-none focus:border-blue-500 bg-gray-700" placeholder="Enter your name">-->
+<!--        </div>-->
+
+<!--        <div class="mb-4">-->
+<!--            <label for="phone" class="block text-white font-bold mb-2">Phone Number</label>-->
+<!--            <input type="tel" id="phone" name="phone" required-->
+<!--                   class="w-full px-3 py-2 rounded-lg focus:outline-none focus:border-blue-500 bg-gray-700" placeholder="Enter your phone number">-->
+<!--        </div>-->
+
+<!--        <div class="mb-4">-->
+<!--            <label for="address" class="block text-white font-bold mb-2 ">Address</label>-->
+<!--            <input type="text" id="address" name="address" required-->
+<!--                   class="w-full px-3 py-2 rounded-lg focus:outline-none focus:border-blue-500 bg-gray-700" placeholder="Enter your address">-->
+<!--        </div>-->
+
+<!--        <div class="mb-4">-->
+<!--            <label class="block text-white font-bold mb-2">Blood Type</label>-->
+<!--            <select name="bloodType" class="w-full bg-gray-700 text-gray-400 rounded p-3" required>-->
+<!--                <option value="">Select Blood Type</option>-->
+<!--                <option value="A+">A+</option>-->
+<!--                <option value="A-">A-</option>-->
+<!--                <option value="B+">B+</option>-->
+<!--                <option value="B-">B-</option>-->
+<!--                <option value="AB+">AB+</option>-->
+<!--                <option value="AB-">AB-</option>-->
+<!--                <option value="O+">O+</option>-->
+<!--                <option value="O-">O-</option>-->
+<!--            </select>-->
+<!--        </div>-->
+
+<!--        <div class="flex flex-col md:flex-row justify-center mt-4 ">-->
+<!--            <button type="submit"-->
+<!--                    class="bg-green-500 text-black font-bold px-6 py-2 rounded-lg hover:bg-green-700 focus:outline-none mb-2 md:mb-0 mx-2.5">-->
+<!--                Post-->
+<!--            </button>-->
+<!--            <a href="/"-->
+<!--               class="bg-red-500 text-black font-bold px-6 py-2 rounded-lg hover:bg-red-700 focus:outline-none flex items-center justify-center md:justify-between mx-2.5">-->
+<!--                Back-->
+<!--            </a>-->
+<!--        </div>-->
+<!--    </form>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Include both scripts &ndash;&gt;-->
+<!--<script src="index.js"></script>-->
+<!--<script>-->
+<!--    // Dedicated form submission script-->
+<!--    document.addEventListener('DOMContentLoaded', () => {-->
+<!--        const postForm = document.getElementById('postForm');-->
+
+<!--        if (postForm) {-->
+<!--            postForm.addEventListener('submit', async (e) => {-->
+<!--                e.preventDefault();-->
+<!--                const formData = Object.fromEntries(new FormData(postForm));-->
+
+<!--                console.log("Sending Blood Post Data:", formData);-->
+
+<!--                try {-->
+<!--                    const response = await fetch('http://localhost:5000/create_post', {-->
+<!--                        method: 'POST',-->
+<!--                        headers: {-->
+<!--                            'Content-Type': 'application/json',-->
+<!--                        },-->
+<!--                        body: JSON.stringify(formData)-->
+<!--                    });-->
+
+<!--                    console.log("Blood Post Response Status:", response.status);-->
+
+<!--                    const result = await response.json();-->
+<!--                    console.log("Blood Post Response Result:", result);-->
+
+<!--                    if (result.status === 'success') {-->
+<!--                        alert('Blood post created successfully!');-->
+<!--                        postForm.reset();-->
+<!--                        window.location.href = 'index.html';-->
+<!--                    } else {-->
+<!--                        alert(result.message || 'Blood post creation failed');-->
+<!--                    }-->
+<!--                } catch (error) {-->
+<!--                    console.error('Blood Post Creation Error:', error);-->
+<!--                    alert('Blood post creation failed: ' + error.message);-->
+<!--                }-->
+<!--            });-->
+<!--        }-->
+<!--    });-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post - Resurrection</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-900 text-white font-semibold">
+<nav class="bg-gray-800 shadow-lg mb-8">
+    <div class="container mx-auto px-6">
+        <div class="flex justify-between items-center py-6">
+            <a href="/" class="text-white text-2xl font-bold">Resurrection</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container mx-auto px-4 py-8">
+    <form id="postForm" class="max-w-lg mx-auto bg-gray-800 rounded-lg shadow-md p-6">
+        <h2 class="text-2xl font-bold mb-6 text-white text-center">Create New Post</h2>
+
+        <div class="mb-4">
+            <label for="name" class="block text-white font-bold mb-2">Name</label>
+            <input type="text" id="name" name="name" required
+                   class="w-full px-3 py-2 rounded-lg focus:outline-none focus:border-blue-500 bg-gray-700"
+                   placeholder="Enter your name">
+        </div>
+
+        <div class="mb-4">
+            <label for="phone" class="block text-white font-bold mb-2">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required
+                   class="w-full px-3 py-2 rounded-lg focus:outline-none focus:border-blue-500 bg-gray-700"
+                   placeholder="Enter your phone number">
+        </div>
+
+        <div class="mb-4">
+            <label for="address" class="block text-white font-bold mb-2">Address</label>
+            <input type="text" id="address" name="address" required
+                   class="w-full px-3 py-2 rounded-lg focus:outline-none focus:border-blue-500 bg-gray-700"
+                   placeholder="Enter your address">
+        </div>
+
+        <div class="mb-4">
+            <label class="block text-white font-bold mb-2">Blood Type</label>
+            <select name="bloodType" class="w-full bg-gray-700 text-white rounded p-3" required>
+                <option value="">Select Blood Type</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+        </div>
+
+        <div class="mb-4">
+            <label class="block text-white font-bold mb-2">Urgency Level</label>
+            <select name="urgency" class="w-full bg-gray-700 text-white rounded p-3" required>
+                <option value="">Select Urgency Level</option>
+                <option value="normal" class="text-blue-500">Normal</option>
+                <option value="urgent" class="text-yellow-500">Urgent</option>
+                <option value="critical" class="text-red-500">Critical</option>
+            </select>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-center mt-4">
+            <button type="submit"
+                    class="bg-green-500 text-black font-bold px-6 py-2 rounded-lg hover:bg-green-700 focus:outline-none mb-2 md:mb-0 mx-2.5">
+                Post
+            </button>
+            <a href="/first/.idea/dist/index.html"
+               class="bg-red-500 text-black font-bold px-6 py-2 rounded-lg hover:bg-red-700 focus:outline-none flex items-center justify-center md:justify-between mx-2.5">
+                Back
+            </a>
+        </div>
+    </form>
+</div>
+
+<!-- Include both scripts -->
+<script src="index.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const postForm = document.getElementById('postForm');
+
+        if (postForm) {
+            postForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const formData = new FormData(postForm);
+                const data = {
+                    name: formData.get('name'),
+                    phone: formData.get('phone'),
+                    address: formData.get('address'),
+                    blood_type: formData.get('bloodType'),
+                    urgency: formData.get('urgency')
+                };
+
+                console.log("Sending Blood Post Data:", data);
+
+                try {
+                    const response = await fetch('http://localhost:5000/create_post', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(data)
+                    });
+
+                    console.log("Blood Post Response Status:", response.status);
+
+                    const result = await response.json();
+                    console.log("Blood Post Response Result:", result);
+
+                    if (result.status === 'success') {
+                        alert('Blood post created successfully!');
+                        postForm.reset();
+                        window.location.href = 'index.html';
+                    } else {
+                        alert(result.message || 'Blood post creation failed');
+                    }
+                } catch (error) {
+                    console.error('Blood Post Creation Error:', error);
+                    alert('Blood post creation failed: ' + error.message);
+                }
+            });
+        }
+
+        // Add visual feedback for urgency selection
+        const urgencySelect = document.querySelector('select[name="urgency"]');
+        if (urgencySelect) {
+            urgencySelect.addEventListener('change', function() {
+                // Remove any existing classes
+                this.classList.remove('text-blue-500', 'text-yellow-500', 'text-red-500');
+
+                // Add appropriate color class based on selection
+                switch(this.value) {
+                    case 'normal':
+                        this.classList.add('text-blue-500');
+                        break;
+                    case 'urgent':
+                        this.classList.add('text-yellow-500');
+                        break;
+                    case 'critical':
+                        this.classList.add('text-red-500');
+                        break;
+                }
+            });
+        }
+    });
+
+    // Prevent form resubmission on page refresh
+    if (window.history.replaceState) {
+        window.history.replaceState(null, null, window.location.href);
+    }
+</script>
+</body>
+</html>

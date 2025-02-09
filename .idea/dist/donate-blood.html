@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Same head content as main page -->
+  <title>Donate Blood - Resurrection</title>
+</head>
+<body class="bg-gray-900 text-gray-100">
+<!-- Same navigation as main page -->
+
+<main class="container mx-auto px-4 py-8">
+  <div class="max-w-2xl mx-auto bg-gray-800 rounded-lg shadow-lg p-6">
+    <h1 class="text-2xl font-bold mb-6">Blood Donation Form</h1>
+
+    <form id="bloodDonationForm" class="space-y-6">
+      <div>
+        <label class="block text-gray-300 mb-2">Blood Type</label>
+        <select class="w-full bg-gray-700 text-white rounded p-3" required name="bloodType">
+          <option value="">Select Blood Type</option>
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block text-gray-300 mb-2">Last Donation Date</label>
+        <input type="date" name="lastDonationDate" class="w-full bg-gray-700 text-white rounded p-3">
+      </div>
+
+      <div>
+        <label class="block text-gray-300 mb-2">Medical Conditions</label>
+        <textarea
+                name="medicalConditions"
+                class="w-full bg-gray-700 text-white rounded p-3"
+                rows="3"
+                placeholder="List any medical conditions..."
+        ></textarea>
+      </div>
+
+      <div>
+        <label class="block text-gray-300 mb-2">Availability</label>
+        <input type="text" name="availability" class="w-full bg-gray-700 text-white rounded p-3"
+               placeholder="When are you available to donate?">
+      </div>
+
+      <div>
+
+        <label class="block text-gray-300 mb-2">Contact</label>
+        <input type="tel" name="Contact Information" class="w-full bg-gray-700 text-white rounded p-3"
+               placeholder="123-456-7890"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" >
+      </div>
+
+      <button type="submit" class="w-full bg-red-500 hover:bg-red-600 text-white py-3 rounded">
+        Submit Donation Offer
+      </button>
+    </form>
+  </div>
+</main>
+
+<!-- Same footer as main page -->
+</body>
+</html>

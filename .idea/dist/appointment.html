@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Offers - Resurrection</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-900 text-gray-100">
+<nav class="bg-gray-800 shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+            <a href="index.html" class="text-white text-2xl font-bold flex items-center">
+                <span class="text-blue-500">🏥</span>
+                <span class="ml-2">Resurrection</span>
+            </a>
+            <div class="flex items-center space-x-6">
+                <a href="index.html" class="text-white hover:text-blue-400 transition-colors">Home</a>
+                <a href="history.html" class="text-white hover:text-blue-400 transition-colors">History</a>
+                <a href="appointment.html" class="text-white hover:text-blue-400 transition-colors">Appointment</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="container mx-auto px-4 py-8">
+    <div class="bg-gray-800 rounded-lg shadow-lg p-6">
+        <div class="flex justify-between items-center mb-6">
+            <h1 class="text-2xl font-bold">Donation Offers</h1>
+            <div class="flex gap-4">
+                <select id="bloodTypeFilter" class="bg-gray-700 text-white rounded p-2">
+                    <option value="">All Blood Types</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+                <select id="dateSort" class="bg-gray-700 text-white rounded p-2">
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                </select>
+            </div>
+        </div>
+        <div class="overflow-x-auto">
+            <table class="min-w-full table-auto">
+                <thead>
+                <tr class="bg-gray-700">
+                    <th class="px-4 py-2">Blood Type</th>
+                    <th class="px-4 py-2">Last Donation Date</th>
+                    <th class="px-4 py-2">Medical Conditions</th>
+                    <th class="px-4 py-2">Availability</th>
+                    <th class="px-4 py-2">Contact</th>
+                    <th class="px-4 py-2">Created At</th>
+                </tr>
+                </thead>
+                <tbody id="donationOffersTableBody">
+                <!-- Data will be populated here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+
+<script src="appointment.js"></script>
+</body>
+</html>
