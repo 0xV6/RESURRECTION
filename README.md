@@ -7,7 +7,7 @@
 
 ## Overview
 
-RESURRECTION is a cutting-edge project designed to revolutionize [describe the purpose of your project]. With a focus on [key features/technologies], this project aims to [describe the goals and benefits].
+RESURRECTION is a cutting-edge project that aims to revolutionize the blood donation process. This project attempts to streamline blood donation by providing real-time donation requests, monitoring contribution histories, and an interactive map to help donors find nearby hospitals.
 
 ## Features
  
@@ -68,7 +68,7 @@ We welcome contributions from the community. To contribute, please follow these 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details.
 
 ## Tech Stack
 
