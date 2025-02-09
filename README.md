@@ -43,10 +43,6 @@ To get started with RESURRECTION, follow these steps:
     ```sh
     cd RESURRECTION
     ```
-3. Install the dependencies:
-    ```sh
-    [Command to install dependencies]
-    ```
 
 ## Contributing
 
