@@ -14,22 +14,22 @@ RESURRECTION is a cutting-edge project that aims to revolutionize the blood dona
 
 ## Features
  
-1. ** Dual Posting System (Users & Hospitals)**  
+1. **Dual Posting System (Users & Hospitals)**  
    Both **individual users** and **hospitals** can post blood requirements, ensuring quicker communication and better accessibility for donors.  
 
-2. ** Urgency-Based Requests**  
+2. **Urgency-Based Requests**  
    Requests can be categorized by urgency levels (**Critical, High, Moderate**) to help prioritize donations and notify potential donors immediately.  
 
-3. **-> Easy Donor Registration**  
+3. **Easy Donor Registration**  
    Donors can **proactively sign up** to indicate their willingness to donate blood, allowing them to be contacted even when no specific request is posted.  
 
-4. ** Nearby Hospitals on Interactive Map**  
+4. **Nearby Hospitals on Interactive Map**  
    A **dedicated Maps section** helps users locate nearby hospitals and blood banks, ensuring quick and easy access to donation centers.  
 
-5. ** Appointments & Scheduling**  
+5. **Appointments & Scheduling**  
    Users can **view, book, and manage blood donation appointments** directly from the platform, ensuring a hassle-free donation experience.  
 
-6. ** Donation History & Records**  
+6. **Donation History & Records**  
    A **personalized history section** allows users to track their past donations, see upcoming appointments, and maintain a record of their contribution to saving lives.  
 
 These features create a smooth and efficient blood donation system, making it easier for donors and recipients to connect while ensuring timely and life-saving interventions. 🚑💉
