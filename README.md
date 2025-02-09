@@ -3,7 +3,8 @@
 [![GitHub issues](https://img.shields.io/github/issues/0xV6/RESURRECTION)](https://github.com/0xV6/RESURRECTION/issues)
 [![GitHub forks](https://img.shields.io/github/forks/0xV6/RESURRECTION)](https://github.com/0xV6/RESURRECTION/network)
 [![GitHub stars](https://img.shields.io/github/stars/0xV6/RESURRECTION)](https://github.com/0xV6/RESURRECTION/stargazers)
-[![GitHub license](https://img.shields.io/github/license/0xV6/RESURRECTION)](https://github.com/0xV6/RESURRECTION/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/0xV6/RESURRECTION?style=for-the-badge&label=License&color=blue)](https://opensource.org/licenses/GPL-3.0)
+
 
 
 
