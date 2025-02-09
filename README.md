@@ -1,4 +1,4 @@
-# RESURRECTION
+# RESURRECTION - A BLOOD DONATION PLATFORM
 
 [![GitHub issues](https://img.shields.io/github/issues/0xV6/RESURRECTION)](https://github.com/0xV6/RESURRECTION/issues)
 [![GitHub forks](https://img.shields.io/github/forks/0xV6/RESURRECTION)](https://github.com/0xV6/RESURRECTION/network)
