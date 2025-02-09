@@ -164,15 +164,15 @@ We welcome contributions from the community. To contribute, please follow these 
 
 ## Meet the Developers
 
-### Raman Mann
-
-- [GitHub](https://github.com/0xV6)
-- [X.com](https://x.com/raman_205)
-
 ### Deepanshu Sharma
 
 - [GitHub](https://github.com/DeepanshuSharma05)
 - [X.com](https://x.com/i_deepanshu05)
+
+### Raman Mann
+
+- [GitHub](https://github.com/0xV6)
+- [X.com](https://x.com/raman_205)
 
 ## License
 
